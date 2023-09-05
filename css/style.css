@@ -1,0 +1,46 @@
+html {
+    box-sizing: border-box;
+}
+*, *::after, *::before {
+    box-sizing: inherit;
+}
+body {
+    margin: 0;
+    font-family: sans-serif;
+}
+.form {
+    max-width: 50%;
+    margin: 200px auto 0 auto;
+}
+.form fieldset {
+    display: flex;
+    flex-direction: column;
+    row-gap: 2rem;
+    padding: 20px 14px;
+    border-radius: 6px;
+    border: 2px solid rgb(38, 38, 163);
+}
+.input_container {
+    display: flex;
+    flex-direction: column;
+    row-gap: .6rem;
+}
+.input_container input {
+    padding: .4rem;
+    border-radius: .2rem;
+    border: 1px solid rgb(211, 211, 211);
+}
+.input_container input:focus {
+    outline: 2px solid rgb(38, 38, 163);
+}
+.submit {
+    margin-top: 10px;
+    padding: 6px 0;
+    border-radius: 2px;
+    cursor: pointer;
+    color: white;
+    background-color: rgb(38, 38, 163);
+}
+.submit:active {
+    background-color: rgb(21, 21, 121);
+}
